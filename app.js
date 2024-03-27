@@ -1,8 +1,7 @@
 
-const env= require('dotenv').config();
 const url= "https://newsapi.org/v2/everything?q=";
 
-const key=process.env.KEY;
+const key="f0d24385e1c041d3a9d93d70e00357db";
 
 
 window.addEventListener("load",async ()=>{
