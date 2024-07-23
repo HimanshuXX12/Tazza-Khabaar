@@ -1,9 +1,10 @@
 
-const url= "https://newsapi.org/v2/everything?q=";
+// const url= "https://newsapi.org/v2/everything?q=";
 
-const key="f0d24385e1c041d3a9d93d70e00357db";
+// const key="f0d24385e1c041d3a9d93d70e00357db";
 
-
+const url=process.env.API_URL;
+const key=process.env.API_KEY;
 
 
 window.addEventListener("load",async ()=>{
@@ -155,6 +156,16 @@ home_btn.addEventListener('click',(e)=>{
 const button= document.getElementById('button');
 const text= document.getElementById('search-text');
 
+text.addEventListener("blur", async ()=>{
+      if(text.value)
+      {
+          text.classList.add("filled");
+      }
+      else{
+          text.classList.remove("filled");
+      }
+})
+
  
 button.addEventListener('click',(e)=>{
  
@@ -184,7 +195,7 @@ text.addEventListener('keypress',(e)=>{
     }
     else if(e.key=='Enter')
     {
-         console.log("jhbcdb")
+        
       fetchNews(text.value);
       intial.classList.remove('active');
        

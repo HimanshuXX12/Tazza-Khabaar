@@ -19,45 +19,44 @@
     <div class="container mx-auto w-full">
 
         
-        <header class="bg-red-500  header">
-            <div class="text-center">
-
-                <button class="news-text font-bold  uppercase" id="home-btn">TAZZA KHABAAR</button>
-            </div>
+        <header class=" text-black  header text-center">
+           
+                <button class="  news-text font-bold  uppercase" id="home-btn">TAZZA KHABAAR</button>
+           
         </header>
         
         <section>
             
-            <div class="buttons flex items-center justify-end  pd-12 mt-1">
+            <div class="buttons flex items-center justify-evenly   mt-1">
                 <ul class="flex items-center justify-center w-1/2  h-full ">
-                    <li class="btn  m-4  hover:bg-red-500 " id="science"  onclick="fetcher('science')"><a href="#" >Science</a></li>
-                    <li class="btn m-4 hover:bg-red-500" id="covid"><a href="#" onclick="fetcher('covid')">Covid</a></li>
-                    <li class="btn m-4 hover:bg-red-500" id="ipl"><a href="#" onclick="fetcher('ipl')">IPL</a></li>
-                    <li class="btn m-4 hover:bg-red-500" id="politics"><a href="#" onclick="fetcher('politics')">Polictics</a></li>
-                    <li class="btn m-4 hover:bg-red-500" id="entertainment"><a href="#" onclick="fetcher('entertainment')">Enterinment</a></li>
+                    <li class="btn  m-4  hover:bg-red-500 hover:text-white " id="science"  onclick="fetcher('science')"><a href="#" >Science</a></li>
+                    <li class="btn m-4 hover:bg-red-500 hover:text-white" id="covid"><a href="#" onclick="fetcher('covid')">Covid</a></li>
+                    <li class="btn m-4 hover:bg-red-500 hover:text-white" id="ipl"><a href="#" onclick="fetcher('ipl')">IPL</a></li>
+                    <li class="btn m-4 hover:bg-red-500 hover:text-white" id="politics"><a href="#" onclick="fetcher('politics')">Polictics</a></li>
+                    <li class="btn m-4 hover:bg-red-500 hover:text-white" id="entertainment"><a href="#" onclick="fetcher('entertainment')">Enterinment</a></li>
                 </ul>
                 <div  class=" ml-8">
 
-                    <input type="text" class="search-text font-bold  px-3 py-1 " name="" id="search-text" placeholder="Search">
-                    <button class=" search ml-4 font-bold text-lg px-4 py-1  " id="button">Search</button>
+                    <input type="text" class=" search-text font-bold  px-3 py-2.5 " name="" id="search-text" placeholder="Search">
+                    <button class=" search   ml-4 font-bold text-lg px-4 py-2.5  " id="button">Search</button>
                 </div>
             </div>
             
-            <div class="card-container container grid grid-cols-3  justify-items-center  mt-10" id="destination">
+            <div class="card-container container grid grid-cols-3  justify-items-center  mt-10 mb-12" id="destination">
            
             </div>
 
 
             <template id="template-card">
 
-                    <div class="card m-4 pl-2 p-4">
+                    <div class="card m-4 p-4">
                         <div class="card-header p-2">
-                            <img src=""  onerror="this.onerror=null; this.src='smiley.jpg';this.width='30'; this.height='20' " alt="" width="50" height="90" id="image">
+                            <img src=""  onerror="this.onerror=null; this.src='smiley.jpg';this.width='30'; this.height='40';  " alt="" width="50" height="90" id="image">
                         </div>
-                        <div class="card-sections m-2">
-                            <h4 id="title" class="font-bold">This is the title</h4>
-                            <h6 id="source" class="font-bold">End of Gadget <strong> 28/06/2015</strong> </h6>
-                            <p  id="desc" class="new desp mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, iste!</p>
+                        <div class="card-sections m-2  ">
+                            <h4 id="title" class="font-bold bg-white">This is the title</h4>
+                            <h6 id="source" class="font-bold bg-white">End of Gadget <strong> 28/06/2015</strong> </h6>
+                            <p  id="desc" class="new desp mt-3 bg-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, iste!</p>
                             
                         </div>
                     </div>
