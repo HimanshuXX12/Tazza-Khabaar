@@ -1,10 +1,10 @@
 
-// const url= "https://newsapi.org/v2/everything?q=";
+const url= "https://newsapi.org/v2/everything?q=";
 
-// const key="f0d24385e1c041d3a9d93d70e00357db";
-const env=require("dotenv").config();
-const url=process.env.API_URL;
-const key=process.env.API_KEY;
+const key="f0d24385e1c041d3a9d93d70e00357db";
+// const env=require("dotenv").config();
+// const url=process.env.API_URL;
+// const key=process.env.API_KEY;
 
 
 window.addEventListener("load",async ()=>{
