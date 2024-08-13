@@ -23,7 +23,7 @@ async function fetchNews(query)
 
 
      fetching(data.articles);
-     console.log(data.articles);
+     console.log("data articles",data.articles);
      console.log(query);
 
 
