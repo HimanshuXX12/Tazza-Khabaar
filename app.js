@@ -1,5 +1,6 @@
 
 // const url= "https://newsapi.org/v2/everything?q=";
+const env= require("dotenf").config();
 const url=process.env.API_URL;
 const key=process.env.KEY;
 
